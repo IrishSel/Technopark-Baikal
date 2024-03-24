@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index/style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Технопарк Байкал</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header width">
+            <!-- Логотип -->
+            <div class="logo">
+                <a href="index.html"><img src="./index/Logo_Tech-Park.svg" alt="logo">
+                <div class="logoText"></a>
+                    <p>Технопарк</p>
+                    <p>Байкал</p>
+                </div>
+            </div>
+            <!-- Меню -->
+            <div class="menu">
+                <ul class="tab">
+                    <li>
+                        <a href="">О технопарке</a>
+                        <ul>
+                            <li><a href="./About the technopark/About the technopark.html">О технопарке</a></li>
+                            <li><a href="./Team/team.html">Команда</a></li>
+                            <li><a href="">Вакансии</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab">
+                    <li>
+                        <a href="">Услуги</a>
+                        <ul>
+                            <li><a href="">Аренда помещений</a></li>
+                            <li><a href="">Услуги по организации мероприятия</a></li>
+                            <li><a href="">Услуги учебного центра</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab">
+                    <li>
+                        <a href="">Резиденты</a>
+                        <ul>
+                            <li><a href="">Перечень резидентов</a></li>
+                            <li><a href="">Как стать резидентом</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab">
+                    <li>
+                        <a href="">Новости</a>
+                        <ul>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="">Фотогаллерея</a></li>
+                            <li><a href="">Мероприятия</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="tab">
+                    <li>
+                        <a href="">Контакты</a>
+                        <ul>
+                            <li><a href="./map/map.html">Как добраться</a></li>
+                            <li><a href="./Feedback/feedback.html">Обратная связь</a></li>
+                            <li><a href="">Перечень контактов</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">Партнеры</a>
+                        <ul>
+                            <a href=""></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="">
+                    <button class="submit"><img src=".//index/Head/Magnifier.png" alt=""></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <img src="./index/logogal/imgHeader.png" alt="Изображение 1" class="slide">
+        <img src="./index/logogal/2.png" alt="Изображение 2" class="slide">
+        <img src="./index/logogal/imgHeader.png" alt="Изображение 3" class="slide">
+      </div>
+      <script>let currentIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const slideInterval = 3000;
+   
+  function changeSlide() {
+    slides[currentIndex].style.opacity = 0;
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].style.opacity = 1;
+  }
+   
+  setInterval(changeSlide, slideInterval);</script>
+    <!-- Services -->
+    <div class="Services width">
+        <h1>Услуги Технопарка Байкал</h1>
+        <div class="servicesCards">
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/RentRoom.jpg" alt="Аренда помещения">
+                    <p>Аренда помещения</p>
+                    <p>Широкий выбор помещений различного функционального назначения на территории для эффективной и
+                        комфортной деятельности</p>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/ProvisionOfEquipment.jpg" alt="Предоставление оборудывания">
+                    <p>Предоставление оборудования</p>
+                    <p>Поддержка инноваций и технологического развития путем предоставления доступа к современному
+                        оборудованию, инструментам и устройствам, необходимым для исследований, создания прототипов и
+                        производственных целей.</p>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/ProvidingCommunications.jpg" alt="Обеспечение коммуникации">
+                    <p>Обеспечение коммуникаций</p>
+                    <p>Описание</p>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/HoldingEvents.jpg" alt="Проведение мероприятий">
+                    <p>Проведение мероприятий</p>
+                    <p>Описание</p>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/MasterClass.jpg" alt="Мастер-классы">
+                    <p>Мастер-классы</p>
+                    <p>Описание</p>
+                </a>
+            </div>
+            <div class="cards">
+                <a href="">
+                    <img src=".//index/Services/sponsor.jpg" alt="Спонсирование проекта">
+                    <p>Спонсирование проекта</p>
+                    <p>Описание</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Partners -->
+    <div class="Partners width">
+        <h3>Партнеры Технопарка Байкал</h3>
+        <div>
+            <a href="https://www.rabotauuaz.ru/"><img src=".//index/logo/zavod.png" alt="УУАЗ"></a>
+            <a href="https://uuppo.ru/"><img src=".//index/logo/yypps.jfif" alt="УППО"></a>
+            <a href="https://www.aviaport.ru/aviafirms/497/"><img src=".//index/logo/Aeroteh.png" alt="Аэротех"></a>
+            <a href="https://www.esstu.ru/index.htm"><img src=".//index/logo/vsgutu.jpg" alt="ВСГУТУ"></a>
+            <a href="http://www.avia-college-uu.ru/"><img src=".//index/logo/technicum.png" alt="Техникум"></a>
+            <a href=""><img src=".//index/logo/zavod.png" alt="АД"></a>
+            <a href=""><img src=".//index/logo/zavod.png" alt="АТ"></a>
+            <a href="https://egov-buryatia.ru/minprom/"><img src=".//index/logo/zavod.png" alt="минпромторг"></a>
+            <a href="https://voljet.ru/"><img src=".//index/logo/zavod.png" alt="Волджет"></a>
+            <a href=""><img src=".//index/logo/zavod.png" alt="Лес Сибири"></a>
+        </div>
+    </div>
+    <!-- BenefitsTechnopark -->
+    <div class="BenefitsTechnopark width">
+        <h3>Чем может быть полезен Технопарк Байкал?</h3>
+        <div class="useFor">
+            <div>
+                <img src=".//index/What is the benefit/student.png" alt="">
+                <p>Студент?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Студент</a>
+            </div>
+            <div>
+                <img src=".//index/What is the benefit/startup.png" alt="">
+                <p>Стартапер?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Стартапер</a>
+            </div>
+            <div>
+                <img src=".//index/What is the benefit/microscop.png" alt="">
+                <p>Ученый?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Ученый</a>
+            </div>
+            <div>
+                <img src=".//index/What is the benefit/resident.png" alt="">
+                <p>Будущий резидент?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Резидент</a>
+            </div>
+            <div>
+                <img src=".//index/What is the benefit/partner.png" alt="">
+                <p>Партнер?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Партнер</a>
+            </div>
+            <div>
+                <img src=".//index/What is the benefit/investor.png" alt="">
+                <p>Инвестор?</p>
+                <p>Текст проверка балаоптоатповтполтво</p>
+                <a href="">Инвестор</a>
+            </div>
+        </div>
+    </div>
+    <!-- Events -->
+    <div class="Events width">
+        <h3>Мероприятия технопарка Байкал</h3>
+        <div>
+            <div>
+                <div class="img">
+                    <img src=".//index/event/event.jpg" alt="">
+                </div>
+                <div class="descriptionBlock">
+                    <div class="date">
+                        <p>23</p>
+                        <p>ноября</p>
+                        <p>2023</p>
+                    </div>
+                    <div class="description">
+                        <p>IT-форум "Взгляд в будущее"</p>
+                    </div>
+                    <div class="description">
+                        <p>«Взгляд в будущее» — это ИТ-форум для обсуждения новых тенденций, инноваций и будущего технологий. </p>
+                    </div>
+                    <a href="">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <!-- addEvents -->
+        <div class="addEvents">
+            <div>
+                <div class="date">
+                    <p>23</p>
+                    <p>Ноября</p>
+                    <p>2023</p>
+                </div>
+                <p>«Взгляд в будущее» — это ИТ-форум для обсуждения новых тенденций, инноваций и будущего технологий.</p>
+                <a href="">Подробнее</a>
+            </div>
+            <div>
+                <div class="date">
+                    <p>23</p>
+                    <p>Ноября</p>
+                    <p>2023</p>
+                </div>
+                <p>«Взгляд в будущее» — это ИТ-форум для обсуждения новых тенденций, инноваций и будущего технологий.</p>
+                <a href="">Подробнее</a>
+            </div>
+            <div>
+                <div class="date">
+                    <p>23</p>
+                    <p>Ноября</p>
+                    <p>2023</p>
+                </div>
+                <p>«Взгляд в будущее» — это ИТ-форум для обсуждения новых тенденций, инноваций и будущего технологий.</p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <!-- PhotoGallery -->
+    <div class="Gallery width">
+        <h3>Фотогалерея</h3>
+        <div class="Photo">
+            <img src=".//index/gallery/gal1.jpg" alt="gal1">
+            <img src=".//index/gallery/gal2.jpg" alt="gal2">
+            <img src=".//index/gallery/gal3.jpg" alt="gal3">
+            <img src=".//index/gallery/gal4.jpg" alt="gal4">
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+    <footer>
+        <div class="footer width">
+            <div class="logo">
+                <img src=".//index/Logo_Tech-Park.svg" alt="logo">
+                <div class="logoText">
+                    <p>Технопарк</p>
+                    <p>Байкал</p>
+                </div>
+            </div>
+            <div class="InfoFoot">
+                <a href="" class="sections">
+                    <p>Разделы сайта</p>
+                    <button><img src=".//index/Footer/стрелка.png" alt="arrow"></button>
+                </a>
+                <a href="tel:+71231231231" class="phone">Тел: +7(123) 123-12-31</a>
+                <div class="info">
+                    <a class="an" href="">О нас</a>
+                    <a class="an" href="">Новости</a>
+                    <a href="">Обратная связь</a>
+                </div>
+                <div class="socialNetwork">
+                    <a href="https://vk.com/club223294184"><img src=".//index/Footer/VK.png" alt="vk"></a>
+                    <a href=""><img src=".//index/Footer/YouTube.png" alt="YouTube"></a>
+                    <a href="https://t.me/TechnoparkBaikal"><img src=".//index/Footer/TG.png" alt="tg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
